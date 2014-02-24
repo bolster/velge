@@ -137,12 +137,12 @@ describe 'Velge.UI', ->
       press($input, 'down')
       expect($('.highlighted', $dropdown)).to.have.text('kiwi')
 
-    it 'cycles the highlight down through choices', ->
-      press($input, 'tab')
-      expect($('.highlighted', $dropdown)).to.have.text('apple')
+    # it 'cycles the highlight down through choices', ->
+    #   press($input, 'tab')
+    #   expect($('.highlighted', $dropdown)).to.have.text('apple')
 
-      press($input, 'tab')
-      expect($('.highlighted', $dropdown)).to.have.text('kiwi')
+    #   press($input, 'tab')
+    #   expect($('.highlighted', $dropdown)).to.have.text('kiwi')
 
     it 'cycles the highlight up through choices', ->
       press($input, 'up')

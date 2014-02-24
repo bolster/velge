@@ -219,12 +219,12 @@
             return self.clearInput();
           case keycodes.COMMA:
           case keycodes.ENTER:
+          case keycodes.TAB:
             event.preventDefault();
             self.submit(self.$input.val());
             self.clearInput();
             return self.closeDropdown();
           case keycodes.DOWN:
-          case keycodes.TAB:
             event.preventDefault();
             self.openDropdown();
             self.cycleChoice('down');

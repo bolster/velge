@@ -69,12 +69,12 @@ class Velge.UI
           self.renderHighlightedChosen()
           self.renderChoices()
           self.clearInput()
-        when keycodes.COMMA, keycodes.ENTER
+        when keycodes.COMMA, keycodes.ENTER, keycodes.TAB
           event.preventDefault()
           self.submit(self.$input.val())
           self.clearInput()
           self.closeDropdown()
-        when keycodes.DOWN, keycodes.TAB
+        when keycodes.DOWN
           event.preventDefault()
           self.openDropdown()
           self.cycleChoice('down')
